@@ -10,5 +10,5 @@ const Button: React.FC<ButtonProps> = () => {
 export default Button
 
 const StyledWrapper = styled.button`
- background-color: ${props => props.theme.palette.primary.main};
+  background-color: ${(props) => props.theme.palette.primary.main};
 `
