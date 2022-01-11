@@ -4,4 +4,4 @@ module.exports = {
   exclude: ['**/node_modules/**', '**/__generated__/**'],
   language: 'typescript',
   artifactDirectory: 'src/queries/__generated__',
-};
+}

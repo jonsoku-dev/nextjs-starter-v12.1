@@ -2,19 +2,16 @@ import { Environment, Network, RecordSource, Store } from 'relay-runtime'
 
 export function createServerNetwork() {
   return Network.create(async (params, variables) => {
-    const response = await fetch(
-      'https://swapi-graphql.netlify.app/.netlify/functions/index',
-      {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify({
-          query: params.text,
-          variables,
-        }),
-      }
-    )
+    const response = await fetch('https://api.spacex.land/graphql/', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify({
+        query: params.text,
+        variables,
+      }),
+    })
 
     return await response.json()
   })
