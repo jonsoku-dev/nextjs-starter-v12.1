@@ -8,3 +8,7 @@
 /tests/performance/**
 /tmp/**
 /docs/**
+/.eslintrc.json
+/relay.config.js
+/next.config.js
+/jest.config.js
