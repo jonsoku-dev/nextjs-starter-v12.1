@@ -6,7 +6,8 @@
       {
         "ssr": true
       }
-    ]
+    ],
+    "relay"
   ],
   "env": {
     "development": {
